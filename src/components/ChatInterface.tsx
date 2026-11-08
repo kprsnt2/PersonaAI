@@ -157,7 +157,12 @@ export default function ChatInterface() {
                         <Sparkles size={24} />
                     </div>
                     <div>
-                        <h1 className="font-comic font-black text-2xl text-white tracking-wider drop-shadow-md">PersonaAI</h1>
+                        <div className="flex items-center gap-2">
+                            <h1 className="font-comic font-black text-2xl text-white tracking-wider drop-shadow-md">PersonaAI</h1>
+                            <span className="hidden sm:inline-block rounded-full bg-white/25 px-2 py-0.5 text-[10px] font-mono font-bold text-white">
+                                gemini-flash-latest
+                            </span>
+                        </div>
                         <p className="text-xs font-bold text-yellow-900">
                             {currentPersonality.name} Mode • {currentPersonality.desc}
                             {userName && ` • Hi ${userName}!`}
